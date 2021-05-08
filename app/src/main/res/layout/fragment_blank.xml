@@ -7,43 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".BlankFragment">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/book_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:id="@+id/item_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ic_launcher_background" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/titre"
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
-                    android:text="titre" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="310dp"
-                    android:layout_height="60dp"
-                    android:text="this is detail" />
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
+        android:layout_height="match_parent" />
 </FrameLayout>
